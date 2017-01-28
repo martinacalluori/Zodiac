@@ -2,37 +2,40 @@
 <html>
 
 	<head>
+
 		<title>
-			
+			Zodiac
 		</title>
 		<link rel="stylesheet" href="css/main.css" />
+
 	</head>
 
 	<body>
 		
 		<div id="wrapper">
 		    <h1>What is your Zodiac Sign based on the Weather?</h1>
-		    <form onsubmit=" return callZodiac();">
+		    <form onsubmit="return calZodiac();">
 		      <p>
 		        <input id="fname" name="fname" type="text" placeholder="First Name" required>
 		      </p>
 		      <p>
 		        <input id="lname" name="lname" type="text" placeholder="Last Name" required>
 		      </p>
-		      <p>
+		   		 <p>
 		        <input id="bday" name="bday" type="date" required> <!--'required' forces you to enter data-->
-		        
 		      </p>
+
 		      <p>
 		        <input type="submit">
 		      </p>
 		    </form>
 		    <div id="displayMsg">
-
 		    </div>
+
 		  </div>
-		  
+
 		<script src="js/main.js"></script>
 
 	</body>
+
 </html>

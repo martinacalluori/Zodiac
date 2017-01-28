@@ -2,19 +2,19 @@ var firstName;
 var lastName;
 var birthDayObj;
 
-function callZodiac () {
+function calZodiac() {
 
-	var outputArea = document.getElementById ('displayMsg');
+	var outputArea = document.getElementById('displayMsg');
 
 
-	firstName = document.getElementById('fName').value;
+	firstName = document.getElementById('fname').value;
 
-	lastName = document.getElementById('lName').value;
+	lastName = document.getElementById('lname').value;
 
 	birthDayObj = new Date(document.getElementById('bday').value);
 
 
-	var whichDayIndex = birthDayObj.getDay();
+	var whichDayNdx = birthDayObj.getDay();
 
 	//
 	// this is what calculates the sign
@@ -95,8 +95,10 @@ function callZodiac () {
 		astroSign = 'Aquarius';
 	}
 	//
-	//Aquarius
+	//Aquarius*/
 
-	outputArea.innerHTML = 'Hello ' + firstName + lastName '. Your sign is ' astroSign + '. and you are ' +  + ' years old.';
+	outputArea.innerHTML = 'Hello ' + firstName + ' ' + lastName + '. Your sign is ' + astroSign + '.';
+
+	return false;
 
 }
