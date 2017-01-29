@@ -1,6 +1,8 @@
 var firstName;
 var lastName;
 var birthDayObj;
+var age;
+
 
 function calZodiac() {
 
@@ -11,8 +13,14 @@ function calZodiac() {
 
 	lastName = document.getElementById('lname').value;
 
+
 	birthDayObj = new Date(document.getElementById('bday').value);
 
+ 	var bdayTime = birthDayObj.getTime();
+
+ 	var today = Date.now();
+
+ 	yourAge = (today - bdayTime) / 31556926000;
 
 	var whichDayNdx = birthDayObj.getDay();
 
@@ -24,6 +32,11 @@ function calZodiac() {
 
 	monthNum ++;
 	dayNum ++;
+
+function getAge() {
+	age= document.getElementById('birthDayObj').value - getTime();
+
+}
 
 	var astroSign;
 
@@ -97,7 +110,7 @@ function calZodiac() {
 	//
 	//Aquarius*/
 
-	outputArea.innerHTML = 'Hello ' + firstName + ' ' + lastName + '. Your sign is ' + astroSign + '.';
+	outputArea.innerHTML = 'Hello ' + firstName + ' ' + lastName + '. Your sign is ' + astroSign + ', and your age is ' + yourAge + ' .';
 
 	return false;
 
