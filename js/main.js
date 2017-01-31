@@ -104,13 +104,13 @@ function getAge() {
 	//play dat funky music
 
 	else if ((monthNum == 2 && dayNum >= 19) || (monthNum == 3 && dayNum <= 20 )){
-	astroSign = 'Flurries. You are very connected to the arts and music, and can often use that to make connections with others. Your generosity and compassion for others also helps you maintain healthy relationships. Your wisdom and intuition will be able to lead you to the right path if you let them.;
+	astroSign = 'Flurries. You are very connected to the arts and music, and can often use that to make connections with others. Your generosity and compassion for others also helps you maintain healthy relationships. Your wisdom and intuition will be able to lead you to the right path if you let them.';
 	}
 	//
 	//Pisces
 
 	else {
-		astroSign = 'Misty. Your shyness can sometimes lead people to believe that you are uninterested, but when you let your true energetics side shine through people are more likely to approach you. Your personality allows you to adapt to almost any situation, and as long as you keep your mind occupied you can always trust you are on the path to success.;
+		astroSign = 'Misty. Your shyness can sometimes lead people to believe that you are uninterested, but when you let your true energetics side shine through people are more likely to approach you. Your personality allows you to adapt to almost any situation, and as long as you keep your mind occupied you can always trust you are on the path to success.';
 	}
 	//
 	//Aquarius*/
