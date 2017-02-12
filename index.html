@@ -13,14 +13,21 @@
 
 	<body>
 		<main>
+
+			<div class="icons">
+				<img src="images/icons/cloudy.png" alt="Cloudy">
+				<img src="images/icons/drop.png" alt="Drizzle">
+				<img src="images/icons/rain.png" alt="Rain">
+				<img src="images/icons/flurry.png" alt="Flurry">
+				<img src="images/icons/partly.png" alt="Partly Cloudy">
+	 			<img src="images/icons/rain.png" alt="Rain">
+			</div>
+
 			<div id="wrapper">
-			    <h1>What is your Zodiac Sign based on the Weather?</h1>
+			    <h1>Today's Forecast...</h1>
 			    <form onsubmit="return calZodiac();">
 			      <p>
 			        <input id="fname" name="fname" type="text" placeholder="First Name" required>
-			      </p>
-			      <p>
-			        <input id="lname" name="lname" type="text" placeholder="Last Name" required>
 			      </p>
 			   		 <p>
 			        <input id="bday" name="bday" type="date" required> <!--'required' forces you to enter data-->
@@ -28,12 +35,25 @@
 
 			      <p>
 			        <input type="submit">
+
+			      	<input type="reset">
 			      </p>
 			    </form>
-			    <div id="displayMsg">
-			    </div>
 
-			  </div>
+			    <div id="displayMsg">
+
+			</div>
+			</div>
+
+				<div class="icons">
+					<img src="images/icons/sunny.png" alt="Sunny">
+					<img src="images/icons/tornado.png" alt="Tornado">
+					<img src="images/icons/windy.png" alt="Windy">
+					<img src="images/icons/foggy.png" alt="Foggy">
+					<img src="images/icons/rainbow.png" alt="Rainbow">
+					<img src="images/icons/hurricane.png" alt="Hurricane">
+				</div>
+				
 
 			<script src="js/main.js"></script>
 		</main>

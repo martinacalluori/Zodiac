@@ -1,5 +1,4 @@
 var firstName;
-var lastName;
 var birthDayObj;
 var age;
 
@@ -10,8 +9,6 @@ function calZodiac() {
 
 
 	firstName = document.getElementById('fname').value;
-
-	lastName = document.getElementById('lname').value;
 
 
 	birthDayObj = new Date(document.getElementById('bday').value);
@@ -55,10 +52,10 @@ function getAge() {
 	// Sagittarius
 
 	else if ((monthNum == 10 && dayNum >= 24) || (monthNum == 11 && dayNum <= 21 )){
-		astroSign = 'Typhoon. This means that you know what you want and you will do anything to get it. You are fierce and brave, and live your life to experience things to the fullest and dive into every emotion you feel fully.';
+		astroSign = 'Rainbow. This means that you know what you want and you will do anything to get it. You are fierce and brave, and live your life to experience things to the fullest and dive into every emotion you feel fully.';
 	}
 	//
-	//Scorpio
+	//Scorpio 
 
 	else if ((monthNum == 9 && dayNum >= 23) || (monthNum == 10 && dayNum <= 23 )){
 		astroSign = 'Breezy. This means you are kind and compassionate, but often you try to put others first and because of this, you get easily overwhelmed and stressed. Try to stay away from people that add more stress to your life, and embrace the ones who lift you up.';
@@ -71,6 +68,7 @@ function getAge() {
 	}
 	//
 	//Virgo
+	
 	else if ((monthNum == 7 && dayNum >= 23) || (monthNum == 8 && dayNum <= 22 )){
 		astroSign = 'Wildfire. This means that you are warm and love to be loved. You love being the center of attention, and but your big heart will always shine through. When socializing, your infectious energy can quickly alter the mood of those around you. ';
 	}
@@ -115,7 +113,7 @@ function getAge() {
 	//
 	//Aquarius*/
 
-	outputArea.innerHTML = 'Hello ' + firstName + ' ' + lastName + '. You are ' + yourAge.toFixed(0) + ' years old. Your sign is ' + astroSign;
+	outputArea.innerHTML = 'Hello ' + firstName + '. You are ' + yourAge.toFixed(0) + ' years old. Your sign is ' + astroSign;
 	return false;
 
 }

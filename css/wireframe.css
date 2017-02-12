@@ -1,0 +1,15 @@
+body {
+	width: 800px;
+	margin: 100px auto;
+	padding: 0px auto;
+	box-sizing: border-box;
+}
+
+picture {
+	display: block;
+   	width:  100%;
+    text-align: center;
+    margin: 0px auto;
+	padding: 200px auto;
+
+}
