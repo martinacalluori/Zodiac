@@ -19,7 +19,7 @@ body {
 	font-family: 'Work Sans', sans-serif;
   	margin: 20px 50px;
   	text-align: left;
-  	max-width: 40%;
+  	max-width: 300px;
 
 }
 
@@ -35,9 +35,10 @@ h1{
 #displayMsg {
 	position: absolute;
 	/*display: block;*/
-	left: 900px;
- 	top: 350px;
+	padding-left: 350px;
+ 	padding-bottom: 1000px;
   	width: 400px;
+  	overflow: auto;
 
 }
 .submit {
@@ -49,6 +50,7 @@ input[type=text], input[type=date] {
     background-color: #A7ABDD;
     color: white;
     font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
