@@ -19,7 +19,7 @@ body {
 	font-family: 'Work Sans', sans-serif;
   	margin: 20px 50px;
   	text-align: left;
-  	width: 40%;
+  	/*width: 40%;*/
 
 }
 
@@ -33,12 +33,12 @@ h1{
 }
 
 #displayMsg {
-	position: absolute;
-	/*display: block;*/
-	/*padding-left: 450px;*/
+	/*position: absolute;*/
+	/*padding-left: 450px;
  	padding-bottom: 2000px;
-  width: 300px;
+  width: 300px;*/
   overflow: auto;
+
 
 
 }
@@ -46,6 +46,7 @@ h1{
 	padding: 50px;
 	margin: 50px;
 }
+
 input[type=text], input[type=date] {
     border-bottom: 2px #A7ABDD;
     background-color: #A7ABDD;
@@ -70,7 +71,6 @@ input[type=text], input[type=date] {
 
 .row::after {
     content: "";
-    clear: both;
     display: block;
 }
 
