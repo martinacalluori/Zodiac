@@ -3,6 +3,7 @@ var birthDayObj;
 var age;
 
 
+
 function calZodiac() {
 
 	var outputArea = document.getElementById('displayMsg');
@@ -31,6 +32,8 @@ function calZodiac() {
 
 	monthNum ++;
 	dayNum ++;
+
+
 
 function getAge() {
 	age= document.getElementById('birthDayObj').value - getTime();
@@ -111,9 +114,165 @@ function getAge() {
 		astroSign = 'Misty. Your shyness can sometimes lead people to believe that you are uninterested, but when you let your true energetics side shine through people are more likely to approach you. Your personality allows you to adapt to almost any situation, and as long as you keep your mind occupied you can always trust you are on the path to success.';
 	}
 	//
-	//Aquarius*/
+	//Aquarius
 
 	outputArea.innerHTML = 'Hello ' + firstName + '. You are ' + yourAge.toFixed(0) + ' years old. Your sign is ' + astroSign;
 	return false;
 
 }
+
+function highlight() {
+	console.log('fade2Content called');
+	document.body.classList.remove("blackScreen");
+}
+
+var clearObj = document.getElementById('clear');
+var calmObj = document.getElementById('calm');
+var wildfireObj = document.getElementById('wild');
+var flurryObj = document.getElementById('flurry');
+var sandstormObj = document.getElementById('sand');
+var floodObj = document.getElementById('flood');
+
+var sunnyObj = document.getElementById('sunny');
+var tornadoObj = document.getElementById('tornado');
+var windyObj = document.getElementById('windy');
+var foggyObj = document.getElementById('foggy');
+var rainbowObj = document.getElementById('rainbow');
+var hurricaneObj = document.getElementById('hurricane');
+
+
+
+clearObj.addEventListener('click', function(evt) {
+	displayZodSign(evt, 'clear');
+}, false)
+
+calmObj.addEventListener('click', function(evt) {
+	displayZodSign(evt, 'calm');
+}, false)
+
+wildfireObj.addEventListener('click', function(evt) {
+	displayZodSign(evt, 'wild');
+}, false)
+
+
+flurryObj.addEventListener('click', function(evt) {
+	displayZodSign(evt, 'flurry');
+}, false)
+
+sandstormObj.addEventListener('click', function(evt) {
+	displayZodSign(evt, 'sand');
+}, false)
+
+floodObj.addEventListener('click', function(evt) {
+	displayZodSign(evt, 'flood');
+}, false)
+
+sunnyObj.addEventListener('click', function(evt) {
+	displayZodSign(evt, 'sunny');
+}, false)
+
+tornadoObj.addEventListener('click', function(evt) {
+	displayZodSign(evt, 'tornado');
+}, false)
+
+windyObj.addEventListener('click', function(evt) {
+	displayZodSign(evt, 'windy');
+}, false)
+
+foggyObj.addEventListener('click', function(evt) {
+	displayZodSign(evt, 'foggy');
+}, false)
+
+rainbowObj.addEventListener('click', function(evt) {
+	displayZodSign(evt, 'rainbow');
+}, false)
+
+hurricaneObj.addEventListener('click', function(evt) {
+	displayZodSign(evt, 'hurricane');
+}, false)
+
+
+function displayZodSign(evt, whichOne) {
+	console.log('displayZodSign called ' + whichOne);
+
+
+var row1 = document.getElementById('row1');
+var imgArray = row1.children;
+var row2 = document.getElementById('row2');
+var imgArray2 = row2.children;
+
+	console.log('imgArray is ' + imgArray)
+	console.log('imgArray is ' + imgArray.length)
+	console.log('imgArray 2 is ' + imgArray[2].tagName)
+
+	//imgArray[0].classList.remove('display');
+	//imgArray[3].classList.add('display');
+
+	//Loop through array and remove display class from everything
+	for (lp = 0; lp < imgArray.length; lp++) {
+		imgArray[lp].classList.remove('active');
+	}
+	for (lp = 0; lp < imgArray2.length; lp++) {
+		imgArray2[lp].classList.remove('active');
+	}
+
+	switch (whichOne){
+		case 'clear':
+			//display big image for clear
+			//displayObj.src = 'img/ful_pisces.png';
+			imgArray[0].classList.add('active');
+			break;
+		case 'calm':
+			//displayObj.src ='img/ful_scorpio.png';
+				imgArray[1].classList.add('active');
+			break;
+		case 'wild':
+			//displayObj.src ='img/ful_aquarius.png';
+			imgArray[2].classList.add('active');
+			break;
+		case 'flurry':
+			//display big image for pis
+			//displayObj.src = 'img/ful_pisces.png';
+			imgArray[3].classList.add('active');
+			break;
+		case 'sand':
+			//displayObj.src ='img/ful_scorpio.png';
+				imgArray[4].classList.add('active');
+			break;
+		case 'flood':
+			//displayObj.src ='img/ful_aquarius.png';
+			imgArray[5].classList.add('active');
+			break;
+
+		case 'sunny':
+			//display big image for clear
+			//displayObj.src = 'img/ful_pisces.png';
+			imgArray2[0].classList.add('active');
+			break;
+		case 'tornado':
+			//displayObj.src ='img/ful_scorpio.png';
+				imgArray2[1].classList.add('active');
+			break;
+		case 'windy':
+			//displayObj.src ='img/ful_aquarius.png';
+			imgArray2[2].classList.add('active');
+			break;
+		case 'foggy':
+			//display big image for pis
+			//displayObj.src = 'img/ful_pisces.png';
+			imgArray2[3].classList.add('active');
+			break;
+		case 'rainbow':
+			//displayObj.src ='img/ful_scorpio.png';
+				imgArray2[4].classList.add('active');
+			break;
+		case 'hurr':
+			//displayObj.src ='img/ful_aquarius.png';
+			imgArray2[5].classList.add('active');
+			break;	
+		default:
+			//displayObj.src = 'img/ful_blank.png';
+			imgArray[0].classList.add('active');
+	}
+}
+

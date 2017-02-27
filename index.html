@@ -4,7 +4,7 @@
 	<head>
 
 		<title>
-			Zodiac
+			Weatherscope
 		</title>
 		<link rel="stylesheet" href="css/main.css" />
 		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Work+Sans" rel="stylesheet">
@@ -14,20 +14,22 @@
 
 	<body>
 		<main>
-
+			
 			<div class="icons">
-				<img src="images/icons/cloudy.png" alt="Cloudy">
-				<img src="images/icons/drop.png" alt="Drizzle">
-				<img src="images/icons/rain.png" alt="Rain">
-				<img src="images/icons/flurry.png" alt="Flurry">
-				<img src="images/icons/partly.png" alt="Partly Cloudy">
-	 			<img src="images/icons/thunder.png" alt="Thunder">
+				<div id="row1">
+					<img id="clear" src="images/icons/clear.png" alt="Clear">
+					<img id="calm" src="images/icons/calm.png" alt="Calm">
+					<img id="wild" src="images/icons/wildfire.png" alt="Wildfire">
+					<img id="flurry" src="images/icons/flurry.png" alt="Flurry">
+					<img id="sand" src="images/icons/sandstorm.png" alt="Sandstorm">
+		 			<img id="flood" src="images/icons/flood.png" alt="Flood">
+				</div>
 			</div>
 
 			<div id="wrapper">
 			  <div class="row">
     				<div class="col-6">
-					    <h1>Today's Forecast...</h1>
+					    <h1>Weatherscope</h1>
 					    <form onsubmit="return calZodiac();">
 					      <p>
 					        <input id="fname" name="fname" type="text" placeholder="First Name" required>
@@ -37,15 +39,17 @@
 					      </p>
 
 					      <p>
-					        <input type="submit">
+					      
+					        <input type="submit" class="button">
 
-					      	<input type="reset">
+					      	<input type="reset" class="button">
+					      </div>
 					      </p>
 					    </form>
-				    </div>
+				   
 
 					<div class="col-6">
-			    		<div id="displayMsg">
+			    		<div id="displayMsg"> 
 
 						</div>
 					</div>
@@ -54,15 +58,16 @@
 
 			
 		</div>
-				<div class="icons">
-					<img src="images/icons/sunny.png" alt="Sunny">
-					<img src="images/icons/tornado.png" alt="Tornado">
-					<img src="images/icons/windy.png" alt="Windy">
-					<img src="images/icons/foggy.png" alt="Foggy">
-					<img src="images/icons/rainbow.png" alt="Rainbow">
-					<img src="images/icons/hurricane.png" alt="Hurricane">
+			<div class="icons">
+				<div id="row2">
+					<img id="sunny" src="images/icons/sunny.png" alt="Sunny">
+					<img id="tornado" src="images/icons/tornado.png" alt="Tornado">
+					<img id="windy"  src="images/icons/windy.png" alt="Windy"><!--breezy-->
+					<img id="foggy" src="images/icons/foggy.png" alt="Foggy">
+					<img id="rainbow" src="images/icons/rainbow.png" alt="Rainbow">
+					<img id="hurricane" src="images/icons/hurricane.png" alt="Hurricane">
 				</div>
-				
+			</div>	
 
 			<script src="js/main.js"></script>
 		</main>
