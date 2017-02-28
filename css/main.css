@@ -22,7 +22,7 @@ body {
 
 #wrapper {
 	font-family: 'Work Sans', sans-serif;
-  margin: 15px 50px;
+  margin: 10px 50px;
   text-align: left;
 
   /*width: 40%;*/
@@ -33,9 +33,24 @@ h1{
   font-size: 40px;
 }
 
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+p{
+  font-size: 14px;
+}
 .icons {
 	padding: 30px 0px;
 	margin: 0px auto;
+}
+
+.icons .img {
+  padding: 0px 30px;
 }
 
 #displayMsg {
@@ -49,20 +64,20 @@ h1{
 
 @keyframes highlight {
 to{
-  -webkit-filter: drop-shadow(3px 3px 0 #624F77)
-  drop-shadow(-3px 3px 0 #624F77)
-  drop-shadow(3px -3px 0 #624F77)
-  drop-shadow(-3px -3px 0 #624F77); 
+  -webkit-filter: drop-shadow(2px 2px 0 #624F77)
+  drop-shadow(-2px 2px 0 #624F77)
+  drop-shadow(2px -2px 0 #624F77)
+  drop-shadow(-2px -2px 0 #624F77); 
 
   filter: drop-shadow(3px 3px 0 #624F77) 
-  drop-shadow(-3px 3px 0 #624F77)
-  drop-shadow(3px -3px 0 #624F77)
-  drop-shadow(-3px -3px 0 #624F77); 
+  drop-shadow(-2px 2px 0 #624F77)
+  drop-shadow(2px -2px 0 #624F77)
+  drop-shadow(-2px -2px 0 #624F77); 
 }
 }
 
 .active {
-  animation: highlight 2s ease-in-out infinite alternate;
+  animation: highlight .7s ease-in-out infinite alternate;
 }
 
 .submit {
