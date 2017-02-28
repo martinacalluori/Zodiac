@@ -6,7 +6,7 @@ main {
 	text-align: center;
  	width: 800px;
  	height: 600px;
- 	margin: 100px auto;
+ 	margin: 10px auto;
   padding: 0px;
   background-color: white;
   border-radius: 2px;
@@ -24,6 +24,7 @@ body {
 	font-family: 'Work Sans', sans-serif;
   margin: 10px 50px;
   text-align: left;
+  height: 260px;
 
   /*width: 40%;*/
 }
@@ -64,15 +65,15 @@ p{
 
 @keyframes highlight {
 to{
-  -webkit-filter: drop-shadow(2px 2px 0 #624F77)
-  drop-shadow(-2px 2px 0 #624F77)
-  drop-shadow(2px -2px 0 #624F77)
-  drop-shadow(-2px -2px 0 #624F77); 
+  -webkit-filter: drop-shadow(2px 2px 0 #C8AFCE)
+  drop-shadow(-2px 2px 0 #C8AFCE)
+  drop-shadow(2px -2px 0 #C8AFCE)
+  drop-shadow(-2px -2px 0 #C8AFCE); 
 
-  filter: drop-shadow(3px 3px 0 #624F77) 
-  drop-shadow(-2px 2px 0 #624F77)
-  drop-shadow(2px -2px 0 #624F77)
-  drop-shadow(-2px -2px 0 #624F77); 
+  filter: drop-shadow(3px 3px 0 #C8AFCE) 
+  drop-shadow(-2px 2px 0 #C8AFCE)
+  drop-shadow(2px -2px 0 #C8AFCE)
+  drop-shadow(-2px -2px 0 #C8AFCE); 
 }
 }
 
