@@ -36,6 +36,7 @@ img#helpbutton{
   align-items: flex-start;
   position: absolute; 
   padding: 10px;
+  cursor: pointer;
 }
 
 .helpbutton{
@@ -43,6 +44,7 @@ img#helpbutton{
   justify-content: flex-start;
   align-items: flex-start;
   position: absolute;
+  cursor: pointer;
 }
 
 .help-screen{
@@ -58,11 +60,14 @@ img#helpbutton{
   align-items: center;
   position: absolute;
   top: 0;
+  cursor: pointer;
 }
 
 .help-screen img{
   width: 666px;
   height: 600px;
+  cursor: pointer;
+
 }
 
 h1{
@@ -152,6 +157,7 @@ box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 border-radius: 2px;
 -moz-border-radius: 2px;
 -webkit-border-radius: 2px;
+cursor: pointer;
 }
 
 /*column structure*/
