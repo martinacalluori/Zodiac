@@ -130,7 +130,7 @@ to{
 	margin: 20px;
 }
 
-input[type=text], input[type=date] {
+input[type=text], input[type=textarea] {
     border-bottom: 2px #A7ABDD;
     background-color: #746189;
     color: white;

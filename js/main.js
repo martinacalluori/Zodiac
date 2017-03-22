@@ -46,7 +46,7 @@ function getAge() {
 	// Capricorn
 
 	else if ((monthNum == 11 && dayNum >= 22) || (monthNum ==12 && dayNum <= 21 )) {
-		astroSign = '<h2>November 22 - December 21</h2> <h3>Sunny Day</h3> <p>This means that you are bright and can shine light on almost every situation. Your playfulness eases even the most tense situations. Watch out though, this may be mistaken for carelessness.</p>';
+		astroSign = '<h2>November 22 - December 21</h2> <h3>Sunny Day</h3> <p>This means that you are bright and can shine light on almost every situation. Your playfulness eases even the tensest situations. Watch out though, this may be mistaken for carelessness. </p>';
 		displayZodSign('click', 'sunny');
 	}
 	//
@@ -67,7 +67,7 @@ function getAge() {
 	//Libra
 
 	else if ((monthNum == 8 && dayNum >= 23) || (monthNum == 9 && dayNum <= 22 )){
-		astroSign = '<h2>August 23 - Stepember 22</h2> <h3>Clear Skies</h3> This means you are very reliable and intelligent. You like to make sure others are happy, and sometimes this can lead you to be hypercritical of yourself. Keep sight of your goals and with hard work it will all pay off.';
+		astroSign = '<h2>August 23 - September 22</h2> <h3>Clear Skies</h3> This means you are very reliable and intelligent. You like to make sure others are happy, and sometimes this can lead you to be hypercritical of yourself. Keep sight of your goals and with hard work it will all pay off.';
 		displayZodSign('click', 'clear');
 	}
 	//
@@ -95,7 +95,7 @@ function getAge() {
 	//Caused by unstable air 
 
 	else if ((monthNum == 4 && dayNum >= 20) || (monthNum == 5 && dayNum <= 20 )){
-		astroSign = '<h2>April 20 - May 20</h2> <h3>Calm</h3> You are strong and reliable, and people will often look to you for support. You find that sometimes it is hard to find someone for you to depend on, but look to those around you and you could be suprised at how supportive they are.';
+		astroSign = '<h2>April 20 - May 20</h2> <h3>Calm</h3> You are strong and reliable, and people will often look to you for support. You find that sometimes it is hard to find someone for you to depend on, but look to those around you and you could be surprised at how supportive they are.';
 		displayZodSign('click', 'calm');
 	}
 	//
@@ -103,7 +103,7 @@ function getAge() {
 	//reliable
 
 	else if ((monthNum == 3 && dayNum >= 21) || (monthNum == 4 && dayNum <= 19 )){
-		astroSign = '<h2>March 21 - April 19</h2> <h3>Sand Storm</h3> You are daring, spontaneous and energetic. There is a constant flow of energy surrounding you, which makes it hard for others to stay upset around you. You will be suprised at how much you can learn from being a little more patient with people.';
+		astroSign = '<h2>March 21 - April 19</h2> <h3>Sand Storm</h3> You are daring, spontaneous and energetic. There is a constant flow of energy surrounding you, which makes it hard for others to stay upset around you. You will be surprised at how much you can learn from being a little more patient with people.';
 		displayZodSign('click', 'sand');
 	}
 	//
@@ -240,12 +240,12 @@ var imgArray2 = row2.children;
 			break;
 		case 'sand':
 			imgArray[2].classList.add('active');
-			outputArea.innerHTML = '<h2>March 21 - April 19</h2> <h3>Sand Storm</h3> You are daring, spontaneous and energetic. There is a constant flow of energy surrounding you, which makes it hard for others to stay upset around you. You will be suprised at how much you can learn from being a little more patient with people.';
+			outputArea.innerHTML = '<h2>March 21 - April 19</h2> <h3>Sand Storm</h3> You are daring, spontaneous and energetic. There is a constant flow of energy surrounding you, which makes it hard for others to stay upset around you. You will be surprised at how much you can learn from being a little more patient with people.';
 			playAudio('sands');
 			break;
 		case 'calm':
 			imgArray[3].classList.add('active');
-			outputArea.innerHTML = '<h2>April 20 - May 20</h2> <h3>Calm</h3> You are strong and reliable, and people will often look to you for support. You find that sometimes it is hard to find someone for you to depend on, but look to those around you and you could be suprised at how supportive they are.';
+			outputArea.innerHTML = '<h2>April 20 - May 20</h2> <h3>Calm</h3> You are strong and reliable, and people will often look to you for support. You find that sometimes it is hard to find someone for you to depend on, but look to those around you and you could be surprised at how supportive they are.';
 			playAudio('clm');
 			break;
 		case 'tornado':
@@ -255,7 +255,7 @@ var imgArray2 = row2.children;
 			break;
 		case 'flood':
 			imgArray[5].classList.add('active');
-			outputArea.innerHTML = '<h2>June 21 - July22</h2> <h3>Flash Flood</h3> This means that are spontaneous, and sometimes even moody. This can lead to extreme expressions of emotion that leaves those around you feeling unsure. It is difficult for people to figure you out, and this can drive some people away.' ;
+			outputArea.innerHTML = '<h2>June 21 - July 22</h2> <h3>Flash Flood</h3> This means that are spontaneous, and sometimes even moody. This can lead to extreme expressions of emotion that leaves those around you feeling unsure. It is difficult for people to figure you out, and this can drive some people away.';
 			playAudio('floods');
 			break;
 
@@ -266,7 +266,7 @@ var imgArray2 = row2.children;
 			break;
 		case 'clear':
 			imgArray2[1].classList.add('active');
-			outputArea.innerHTML = '<h2>August 23 - Stepember 22</h2> <h3>Clear Skies</h3> This means you are very reliable and intelligent. You like to make sure others are happy, and sometimes this can lead you to be hypercritical of yourself. Keep sight of your goals and with hard work it will all pay off.';
+			outputArea.innerHTML = '<h2>August 23 - September 22</h2> <h3>Clear Skies</h3> This means you are very reliable and intelligent. You like to make sure others are happy, and sometimes this can lead you to be hypercritical of yourself. Keep sight of your goals and with hard work it will all pay off.';
 			playAudio('birds');
 			break;
 		case 'windy':
@@ -281,12 +281,12 @@ var imgArray2 = row2.children;
 			break;
 		case 'sunny':
 			imgArray2[4].classList.add('active');
-			outputArea.innerHTML = '<h2>November 22 - December 21</h2> <h3>Sunny Day</h3> <p>This means that you are bright and can shine light on almost every situation. Your playfulness eases even the most tense situations. Watch out though, this may be mistaken for carelessness.</p>';
+			outputArea.innerHTML = '<h2>November 22 - December 21</h2> <h3>Sunny Day</h3> <p>This means that you are bright and can shine light on almost every situation. Your playfulness eases even the tensest situations. Watch out though, this may be mistaken for carelessness. </p>';
 			playAudio('chimes');
 			break;
 		case 'storm':
 			imgArray2[5].classList.add('active');
-			outputArea.innerHTML = '<h2>December 22 - January 20 </h2> <h3>Storm</h3> <p>This means that you are shy, stubborn, and sometimes even a little gloomy. You appear calm in most situations, but your inner fog can come out when pushed to the limit.</p>';
+			outputArea.innerHTML = '<h2>December 22 - January 20 </h2> <h3>Storm</h3> <p>This means that you are shy, stubborn, and sometimes even a little gloomy. You appear calm in most situations, but your inner fog can come out when pushed to the limit. </p>';
 			playAudio('thunder');
 			break;
 	
@@ -317,12 +317,5 @@ function helpClick(evt) {
 function closeHelp(evt) {
 	helpscreenObj.classList.remove('help-screen-active');
 }
-
-
-
-
-
-
-
 
 
